@@ -20,6 +20,27 @@
           <audio id="lavasound src="sound/lavasound.mp3> </audio>
       </a-assets>
 
+            <a-camera>
+        <a-entity id="mouseCursor"
+          cursor="fuse: true; fuseTimeout: 1500">
+        </a-entity>
+
+        <a-ring id="cursorRing" 
+          position="0 0 -1"
+          radius-inner= "0.02"
+          radius-outer= "0.03"
+          material="color: red; shader: flat">
+        </a-ring>
+
+        <a-ring id="cursorRing" 
+          position="0 0 -1"
+          radius-inner= "0.05"
+          radius-outer= "0.08"
+          material="color: white; shader: flat">
+        </a-ring>
+
+      </a-camera>
+
       <a-sky id="sun" src="#volcano"></a-sky>
 
       <a-box id="myBox" 
