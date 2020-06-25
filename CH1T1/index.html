@@ -17,6 +17,7 @@
           <img id="lava" src="images/lava.jpg"/>
           <img id="volcano" src="images/volcano.jpg">
           <img id="sun" src="images/sun.jpg">
+          <audio id="lavasound src="sound/lavasound.mp3> </audio>
       </a-assets>
 
       <a-sky id="sun" src="#volcano"></a-sky>
@@ -76,7 +77,8 @@
         shadow>
       </a-plane>
 
-      
+      <a-entity id="lavasound" geometry="primitive: plane" material="color: red"
+          position="-10 0 0" sound="src: #lavasound; autoplay: true"></a-entity>
 
 
     </a-scene>
