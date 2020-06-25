@@ -17,7 +17,7 @@
           <img id="lava" src="images/lava.jpg"/>
           <img id="volcano" src="images/volcano.jpg">
           <img id="sun" src="images/sun.jpg">
-          <audio id="lavasound src="/lavasound.mp3> </audio>
+          <audio id="lavasound src="sound/lavasound.mp3> </audio>
       </a-assets>
 
       <a-entity position= "0 0 7">
@@ -38,7 +38,9 @@
                    easing: linear; 
                    loop: true"
       sound="src: #lavasound; 
-      on: click">
+      on: click
+      refDistance: 4;
+      rollofactor: 4">
       </a-sphere>
 
       <a-plane id="ground"
