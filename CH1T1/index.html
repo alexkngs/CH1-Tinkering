@@ -32,32 +32,9 @@
           material="color: white; shader: flat">
         </a-ring>
 
-        <a-ring id="cursorRing" 
-          position="0 0 -1"
-          radius-inner= "0.05"
-          radius-outer= "0.08"
-          material="color: white; shader: flat">
-        </a-ring>
-
       </a-camera>
 
       <a-sky id="sun" src="#volcano"></a-sky>
-
-      <a-box id="myBox" 
-        position="-1 1 -3" 
-        rotation="0 45 0" 
-        width="3" 
-        height="1" 
-        depth="1" 
-        material="src: #wood"
-        shadow 
-        animation="property: rotation; 
-                   to: 20 100 50; 
-                   dur: 2000; 
-                   easing: linear; 
-                   loop: true" 
-        >
-      </a-box>
 
       <a-sphere id="sun"
       material="src: #sun"
@@ -74,23 +51,6 @@
       refDistance: 4;
       rollofffactor:4;">
       </a-sphere>
-
-
-      <a-box id="myOtherBox" 
-        position="2 1 -5" 
-        rotation="0 45 0" 
-        width="1" 
-        height="1" 
-        depth="1" 
-        material="src: #wood2"
-        shadow
-       animation="property: rotation; 
-                   to: 200 1000 500; 
-                   dur: 2000; 
-                   easing: linear; 
-                   loop: true"
-        >  
-      </a-box>
 
       <a-plane id="ground"
         position="0 0 -4" 
