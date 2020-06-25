@@ -17,7 +17,7 @@
           <img id="lava" src="images/lava.jpg"/>
           <img id="volcano" src="images/volcano.jpg">
           <img id="sun" src="images/sun.jpg">
-          <audio id="lavasound src="./sound/lavasound.mp3> </audio>
+          <audio id="lavasound" src="./sound/lavasound.mp3"> </audio>
       </a-assets>
 
       <a-entity position= "0 0 7">
@@ -36,10 +36,10 @@
                    to: 20 100 50; 
                    dur: 2000; 
                    easing: linear; 
-                   loop: true"
-      sound="src: src: url(./sound/lavasound.mp3); 
-      on: click">
+                   loop: true">
       </a-sphere>
+
+      <a-sound src="#lavasound" autoplay="true"> </a-sound>
 
       <a-plane id="ground"
         position="0 0 -4" 
