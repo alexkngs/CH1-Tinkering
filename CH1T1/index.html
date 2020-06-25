@@ -47,8 +47,11 @@
                    dur: 2000; 
                    easing: linear; 
                    loop: true"
-
-      >
+      sound="src: #lavasound; 
+      on: click; 
+      volume: 1; 
+      refDistance: 4;
+      rollofffactor:4;">
       </a-sphere>
 
 
@@ -76,8 +79,6 @@
         material="src: #lava; repeat: 10 10"
         shadow>
       </a-plane>
-
-      <a-entity sound="src: #lavasound; autoplay: true; volume: 1;"></a-entity>
 
 
     </a-scene>
