@@ -44,6 +44,36 @@
       >
       </a-sphere>
 
+      <a-sphere id="duck"
+      material="src: #duck"
+      radius="1"
+      position="5 3 -1"
+      animation="property: rotation; 
+                   to: 20 100 50; 
+                   dur: 2000; 
+                   easing: linear; 
+                   loop: true"
+
+      sound =" src: #quack; 
+      on: click;"
+      >
+      </a-sphere>
+
+      <a-sphere id="sheep"
+      material="src: #sheep"
+      radius="1"
+      position="-5 3 -1"
+      animation="property: rotation; 
+                   to: 20 100 50; 
+                   dur: 2000; 
+                   easing: linear; 
+                   loop: true"
+
+      sound =" src: #baa; 
+      on: click;"
+      >
+      </a-sphere>
+
       <a-plane id="ground"
         position="0 0 -4" 
         rotation="-90 0 0" 
