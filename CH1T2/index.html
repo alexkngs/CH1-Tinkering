@@ -11,13 +11,14 @@
     <a-scene>
 
       <a-assets>
-          <img id="wood" src="images/wood.jpg" />
-          <img id="wood2" src="images/wood2.jpg" />
-          <img id="grass" src="images/grass.jpg" />
-          <img id="lava" src="images/lava.jpg"/>
-          <img id="volcano" src="images/volcano.jpg">
-          <img id="sun" src="images/sun.jpg">
-          <audio id="lavasound" src="./sound/lavasound.mp3"> </audio>
+          <img id="straw" src="images/straw.jpg" />
+          <img id="farm" src="images/farm.jpg">
+          <img id="cow" src="images/cow.jpg">
+          <img id="duck" src="images/duck.jpg">
+          <img id="sheep" src="images/sheep.jpg">
+          <audio id="moo" src="./sound/moo.mp3"> </audio>
+          <audio id="quack" src="./sound/quack.mp3"> </audio>
+          <audio id="baa" src="./sound/baa.mp3"> </audio>
       </a-assets>
 
       <a-entity position= "0 0 7">
@@ -26,27 +27,29 @@
         </a-camera>
       </a-entity>
 
-      <a-sky id="sun" src="#volcano"></a-sky>
+      <a-sky id="sky" src="#farm"></a-sky>
 
-      <a-sphere id="sun"
-      material="src: #sun"
+      <a-sphere id="cow"
+      material="src: #cow"
       radius="1"
       position="0 3 -1"
       animation="property: rotation; 
                    to: 20 100 50; 
                    dur: 2000; 
                    easing: linear; 
-                   loop: true">
-      </a-sphere>
+                   loop: true"
 
-      <a-sound src="#lavasound" autoplay="true"> </a-sound>
+      sound =" src: #moo; 
+      on: click;"
+      >
+      </a-sphere>
 
       <a-plane id="ground"
         position="0 0 -4" 
         rotation="-90 0 0" 
         width="100" 
         height="100" 
-        material="src: #lava; repeat: 10 10"
+        material="src: #straw; repeat: 10 10"
         shadow>
       </a-plane>
 
